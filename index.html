@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modals</title>
+    <link href="fonts/DINPro-Light.woff2" as="font" type="fonts/woff2" crossorigin="">
+    <link href="fonts/DINPro-Medium.woff2" as="font" type="fonts/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button class="test-btn" data-modal="modal1">Modal1</button>
+    <button class="test-btn" data-modal="modal2">Modal2</button>
+
+
+
+    <div class="m-modal m-modal-congratulation" id="modal1">
+        <div class="m-modal__dialog">
+            <button class="m-modal__close">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10L30 30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M30 10L10 30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+
+            <div class="m-modal__top">
+                <div class="m-modal__title">Поздравляем</div>
+                <div class="m-modal__desc">Вы получили подарок!</div>
+            </div>
+            <div class="m-modal__bg">
+                <div class="m-modal__bg-wrap">
+                    <img src="img/modal-bg.png" alt="">
+                </div>
+            </div>
+            <div class="m-modal__items">
+                <div class="m-modal__item">
+                    <span>Максимальный депозит</span>
+                    <span class="m-modal__item-price">30 $</span>
+                </div>
+                <div class="m-modal__item">
+                    <span>Максимальная ставка</span>
+                    <span class="m-modal__item-price">25 $</span>
+                </div>
+                <div class="m-modal__item">
+                    <span>Сумма ставок</span>
+                    <span class="m-modal__item-price">55 $</span>
+                </div>
+            </div>
+
+            <div class="m-modal__bottom">
+                <button class="m-modal__btn">
+                    Открыть подарок
+                </button>
+                <div class="m-modal__info">
+                    <div class="m-modal__info-price">
+                        200 $
+                    </div>
+                    <div class="m-modal__info-text">
+                        Максимально возможный выигрыш
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-modal m-prize-modal" id="modal2">
+        <div class="m-modal__dialog">
+
+            <div class="m-modal__title">Ваш приз</div>
+            <div class="m-modal__bg">
+                <div class="m-modal__bg-wrap">
+                    <img src="img/modal-bg.png" alt="">
+                </div>
+            </div>
+            <div class="m-modal__prize" data-shadow="200 $">
+                200 $
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
